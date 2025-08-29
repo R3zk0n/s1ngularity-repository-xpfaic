@@ -1,0 +1,45 @@
+{
+  "name": "@acme/forge-logger",
+  "version": "0.3.1",
+  "description": "Structured logging with context helpers for Node services",
+  "keywords": [
+    "logging",
+    "pino",
+    "typescript",
+    "context"
+  ],
+  "license": "MIT",
+  "author": "Acme Platform",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acme/forge-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acme/forge-logger/issues"
+  },
+  "homepage": "https://github.com/acme/forge-logger#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepare": "node scripts/prepare.js",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pino": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.0.5"
+  }
+}
